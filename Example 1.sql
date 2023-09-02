@@ -11,3 +11,15 @@ ALTER TABLE Park ADD COLUMN Cage_no int;
 ALTER TABLE Park ADD COLUMN No_Of_cage int;
 
 ALTER TABLE Park ADD COLUMN No_Of_Camera int;
+
+ALTER TABLE Park RENAME COLUMN No_Of_Types TO No_Of_Tags;
+
+ALTER TABLE Park MODIFY Cage_no varchar(10);
+
+ALTER TABLE Park DROP Cage_no;
+
+DESC Park;
+
+dml data manipulation language
+
+INSERT INTO Park(bone_no,No_Of_Gates,Door_Names) VALUES(1,3,'Moon Light');
